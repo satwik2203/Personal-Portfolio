@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects - Satwik</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 720px;
+      width: 90%;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+      color: #f0f0f0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: max-content;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .project {
+      margin-bottom: 1.8rem;
+      text-align: left;
+    }
+
+    .project-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #00bfff;
+      margin-bottom: 0.3rem;
+    }
+
+    .project-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .project-title {
+        font-size: 1.1rem;
+      }
+      .project-desc {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">🚀</div>
+    <h1>Projects</h1>
+
+    <div class="project">
+      <div class="project-title">Nuevicia Pharma Website</div>
+      <div class="project-desc">
+        Medical product site built using HTML, CSS, and JavaScript.
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Voice Assistant Recommendation System</div>
+      <div class="project-desc">
+        AI/NLP project featuring speech recognition and PyTorch.
+      </div>
+    </div>
+
+    <div class="project">
+      <div class="project-title">Netflix Clustering</div>
+      <div class="project-desc">
+        TF-IDF clustering for content classification using metadata.
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Experience - Satwik</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      color: #fff;
+      background: linear-gradient(270deg, #0f2027, #203a43, #2c5364);
+      background-size: 400% 400%;
+      animation: gradientBG 20s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .container {
+      background: rgba(255, 255, 255, 0.08);
+      backdrop-filter: blur(15px);
+      border: 2px solid rgba(255, 255, 255, 0.15);
+      border-radius: 16px;
+      padding: 2.5rem;
+      max-width: 720px;
+      width: 90%;
+      box-shadow: 0 16px 40px rgba(0,0,0,0.3);
+      animation: slideUp 1.2s ease-out forwards;
+      transform: translateY(30px);
+      opacity: 0;
+      color: #f0f0f0;
+    }
+
+    @keyframes slideUp {
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1.5rem;
+      text-align: center;
+    }
+
+    .emoji {
+      font-size: 3rem;
+      animation: pulse 2s infinite;
+      display: block;
+      margin: 0 auto 1rem auto;
+      width: max-content;
+    }
+
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.1); }
+    }
+
+    .job {
+      margin-bottom: 1.8rem;
+      text-align: left;
+    }
+
+    .job-title {
+      font-weight: 700;
+      font-size: 1.25rem;
+      color: #00bfff;
+      margin-bottom: 0.3rem;
+    }
+
+    .company {
+      font-style: italic;
+      margin-bottom: 0.6rem;
+      color: #a0c4ff;
+    }
+
+    .job-desc {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #e0e0e0;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .job-title {
+        font-size: 1.1rem;
+      }
+      .job-desc {
+        font-size: 0.95rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="emoji">💼</div>
+    <h1>Experience</h1>
+
+    <div class="job">
+      <div class="job-title">Data Science Intern</div>
+      <div class="company">Labmentix</div>
+      <div class="job-desc">
+        Worked on NLP, clustering using TF-IDF, and visualization with Python libraries.
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-title">AI & ML Intern</div>
+      <div class="company">Skillbit Technologies</div>
+      <div class="job-desc">
+        Performed unsupervised learning and AI-based textual analysis.
+      </div>
+    </div>
+
+    <div class="job">
+      <div class="job-title">Full Stack Java Developer</div>
+      <div class="company">APEC Trainings</div>
+      <div class="job-desc">
+        Solved core and advanced Java programming challenges in web environments.
+      </div>
+    </div>
+  </div>
+</body>
+</html>
